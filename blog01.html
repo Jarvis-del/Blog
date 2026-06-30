@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Field Notes — A Minimal Blog</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="blog01.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#" class="logo">Field Notes</a>
+
+    <nav class="nav" id="nav">
+      <a href="#" class="nav-link active">Home</a>
+      <a href="#" class="nav-link">Articles</a>
+      <a href="#" class="nav-link">About</a>
+      <a href="#" class="nav-link">Contact</a>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero wrap">
+    <p class="eyebrow">Writing on craft, work, and quiet observation</p>
+    <h1>Thoughts worth slowing down for.</h1>
+    <p class="hero-sub">A small, ad-free space for long-form essays — no noise, no clutter, just words.</p>
+  </section>
+
+  <section class="wrap featured">
+    <article class="featured-card">
+      <div class="featured-text">
+        <span class="tag">Essay</span>
+        <h2><a href="#">The Discipline of Doing Less</a></h2>
+        <p class="excerpt">Most productivity advice asks you to do more, faster. What if the better question is what to remove — and why subtraction is the harder skill to learn.</p>
+        <div class="meta">
+          <span>James Carter</span>
+          <span class="dot">·</span>
+          <span>June 24, 2026</span>
+          <span class="dot">·</span>
+          <span>6 min read</span>
+        </div>
+      </div>
+      <div class="featured-image" aria-hidden="true"></div>
+    </article>
+  </section>
+
+  <section class="wrap posts-section">
+    <div class="section-head">
+      <h3>Recent Articles</h3>
+      <a href="#" class="view-all">View all
+        <svg class="icon-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="post-grid">
+
+      <article class="post-card">
+        <div class="post-thumb thumb-1" aria-hidden="true"></div>
+        <span class="tag">Reflection</span>
+        <h4><a href="#">On Writing Slowly in a Fast World</a></h4>
+        <p class="excerpt">There's a quiet rebellion in taking your time — in a culture engineered for speed.</p>
+        <div class="meta">
+          <span>Elena Brooks</span>
+          <span class="dot">·</span>
+          <span>June 21, 2026</span>
+        </div>
+      </article>
+
+      <article class="post-card">
+        <div class="post-thumb thumb-2" aria-hidden="true"></div>
+        <span class="tag">Design</span>
+        <h4><a href="#">Why Empty Space Isn't Wasted Space</a></h4>
+        <p class="excerpt">Whitespace gets cut first when budgets shrink. It's usually the first mistake too.</p>
+        <div class="meta">
+          <span>Marcus Lee</span>
+          <span class="dot">·</span>
+          <span>June 18, 2026</span>
+        </div>
+      </article>
+
+      <article class="post-card">
+        <div class="post-thumb thumb-3" aria-hidden="true"></div>
+        <span class="tag">Craft</span>
+        <h4><a href="#">The Lost Art of Finishing</a></h4>
+        <p class="excerpt">Starting is easy and celebrated. Finishing is quiet, unglamorous, and rare.</p>
+        <div class="meta">
+          <span>James Carter</span>
+          <span class="dot">·</span>
+          <span>June 14, 2026</span>
+        </div>
+      </article>
+
+      <article class="post-card">
+        <div class="post-thumb thumb-4" aria-hidden="true"></div>
+        <span class="tag">Essay</span>
+        <h4><a href="#">A Short Defense of Boredom</a></h4>
+        <p class="excerpt">Boredom isn't a problem to be solved. It might be the closest thing to a void left for thought.</p>
+        <div class="meta">
+          <span>Elena Brooks</span>
+          <span class="dot">·</span>
+          <span>June 9, 2026</span>
+        </div>
+      </article>
+
+      <article class="post-card">
+        <div class="post-thumb thumb-5" aria-hidden="true"></div>
+        <span class="tag">Work</span>
+        <h4><a href="#">Notes on Working Without an Audience</a></h4>
+        <p class="excerpt">Most meaningful work happens long before anyone is watching. That's the part worth protecting.</p>
+        <div class="meta">
+          <span>Marcus Lee</span>
+          <span class="dot">·</span>
+          <span>June 3, 2026</span>
+        </div>
+      </article>
+
+      <article class="post-card">
+        <div class="post-thumb thumb-6" aria-hidden="true"></div>
+        <span class="tag">Reflection</span>
+        <h4><a href="#">What Gets Lost in Optimization</a></h4>
+        <p class="excerpt">Every system we tighten trades away a little slack. Some of that slack was the point.</p>
+        <div class="meta">
+          <span>James Carter</span>
+          <span class="dot">·</span>
+          <span>May 29, 2026</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="wrap newsletter">
+    <div class="newsletter-inner">
+      <div>
+        <h3>Get new essays by email</h3>
+        <p>One short note, sent occasionally. No spam, unsubscribe anytime.</p>
+      </div>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" placeholder="you@example.com" required aria-label="Email address">
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="logo">Field Notes</span>
+      <p>A small, independent publication about craft and attention.</p>
+    </div>
+
+    <div class="footer-links">
+      <h5>Explore</h5>
+      <a href="#">Home</a>
+      <a href="#">Articles</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="footer-social">
+      <h5>Follow</h5>
+      <div class="social-icons">
+        <a href="#" class="icon-link" aria-label="Twitter">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M22 5.92a8.2 8.2 0 0 1-2.36.65 4.12 4.12 0 0 0 1.8-2.27 8.22 8.22 0 0 1-2.6 1 4.1 4.1 0 0 0-7 3.74A11.65 11.65 0 0 1 3.4 4.6a4.1 4.1 0 0 0 1.27 5.47 4.07 4.07 0 0 1-1.86-.51v.05a4.1 4.1 0 0 0 3.29 4.02 4.1 4.1 0 0 1-1.85.07 4.11 4.11 0 0 0 3.83 2.85A8.23 8.23 0 0 1 2 18.4a11.6 11.6 0 0 0 6.29 1.85c7.55 0 11.68-6.26 11.68-11.69 0-.18 0-.36-.01-.53A8.18 8.18 0 0 0 22 5.92Z" fill="currentColor"/></svg>
+        </a>
+        <a href="#" class="icon-link" aria-label="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.56 9.56 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.35 4.68-4.58 4.93.36.31.68.92.68 1.85v2.75c0 .26.18.58.69.48A10 10 0 0 0 12 2Z" fill="currentColor"/></svg>
+        </a>
+        <a href="#" class="icon-link" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3.25a1.96 1.96 0 1 0 0 3.92 1.96 1.96 0 0 0 0-3.92ZM20.44 20h-3.37v-5.9c0-1.4-.03-3.21-1.96-3.21-1.96 0-2.26 1.53-2.26 3.11V20H9.48V8.5h3.24v1.57h.05c.45-.86 1.56-1.76 3.21-1.76 3.43 0 4.46 2.26 4.46 5.2V20Z" fill="currentColor"/></svg>
+        </a>
+        <a href="#" class="icon-link" aria-label="RSS">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 11a9 9 0 0 1 9 9h-2a7 7 0 0 0-7-7v-2Zm0-5a14 14 0 0 1 14 14h-2A12 12 0 0 0 4 8V6ZM4 17a2 2 0 1 1 0 4 2 2 0 0 1 0-4Z" fill="currentColor"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap footer-bottom">
+    <p>&copy; 2026 Field Notes. All rights reserved.</p>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path d="M8 13V3M8 3L3 8M8 3L13 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+  </div>
+</footer>
+
+<script src="blog01.js"></script>
+</body>
+</html>
